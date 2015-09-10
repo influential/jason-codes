@@ -53,6 +53,14 @@ function blink() {
 	}, "fast", "swing");
 }
 
+function blinkMenu() {   
+	$(".menu-label-helper").animate({
+		opacity: 0
+	}, "slow", "swing").animate({
+		opacity: 1
+	}, "slow", "swing");
+}
+
 function color() {
 	$("#intro-launch").css("background-color", "rgba(255,0,0,.7)");
 	$("#intro-launch").text("Running");
@@ -65,7 +73,7 @@ function helper() {
 			if($("#intro-launch").text().length == 3) {
 				$("#intro-helper").show();
 			}
-		}, 10000);
+		}, 8000);
 	});
 }
 
@@ -132,9 +140,18 @@ function launch(height, delay) {
 								$(".menu-active").removeClass("hidden");
 								$("#menu").css("background-color", "rgba(0,0,0,0)");
 								$("#intro").remove();
+								$("#menu").css({width: "80px", height: "80px"});
 								$(".about-animate-one").animate({marginRight: "0px"}, 1000, function() {
 									$(".about-animate-two").delay(500).animate({marginRight: "0px"}, 1000, function() {
-										$(".about-animate-three").delay(100).animate({marginTop: "0px"}, 1200);
+										$(".about-animate-three").delay(100).animate({marginTop: "0px"}, 1200, function() {
+											$(".menu-label-helper").show().animate({left: "0px"}, 300, function() {
+												$(window).scroll(function() {
+												   if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+												       setInterval(blinkMenu, 1000);
+												   }
+												});
+											});
+										});
 									});
 								});
 							});
@@ -154,6 +171,7 @@ function setMenu() {
 
 function startMenu(selected) {
 	$("#menu").unbind("click touchstart");
+	$(".menu-label-helper").remove();
 	if($(".menu-active").position().left < 10) {
 		showMenu();
 	} else {
@@ -167,7 +185,7 @@ function startMenu(selected) {
 }
 
 function showMenu() {
-	$("#menu").css({"background-color": "rgba(0,0,0,.6)", width: "100%", height: "100%"});
+	$("#menu").css({"background-color": "rgba(0,0,0,.7)", width: "100%", height: "100%"});
 	$("#menu-list").css({width: "290px", height: "290px"});
 	$(".menu-vertical").animate({height: "290px"}, 800);
 	$("#menu-list").animate({
@@ -188,7 +206,13 @@ function showMenu() {
 			$(this).delay(200*index).animate({
 				top: top[index] + 108 + "px",
 				left: left[index] + 108 + "px"
-			}, 200, "linear");
+			}, 200, "linear", function() {
+				if(index < 2 || index > 4) {
+					$(this).children().css({display: "inline-block", top: "-30px"});
+				} else {
+					$(this).children().css({display: "inline-block", top: "82px"});
+				}
+			});
 		});
 		$(".menu-inactive").promise().done(function() {
 			setMenu();
@@ -200,6 +224,7 @@ function swapMenu(element) {
 	var active = $(".menu-active"); var selected = $(element); var section = $(selected).attr("href");
 	var activeTop = $(active).position().top + "px"; var activeLeft = $(active).position().left + "px";
 	var selectedTop = $(selected).position().top + "px"; var selectedLeft = $(selected).position().left + "px";
+	$(".menu-inactive").children().hide();
 	$(active).removeClass("menu-active").addClass("menu-inactive").show().animate({
 		top: selectedTop,
 		left: selectedLeft
@@ -237,6 +262,7 @@ function swapMenu(element) {
 }
 
 function hideMenu() {
+	$(".menu-inactive").children().hide()
 	$(".menu-inactive").each(function(index) {
 		$(this).delay(200*(5-index)).animate({
 			top: $(".menu-active").position().top + "px",
@@ -263,10 +289,21 @@ function hideMenu() {
 }
 
 function startMail() {
+	$(".intro-email-shoot").on("click touchstart", function() {
+		$("#menu-about").trigger("click");
+		setTimeout(function() { 
+			$("#menu-contact").trigger("click");
+		}, 2300);
+	});
+	$(".intro-email-shoot").on("touchstart", function() {
+		$("#menu-about").trigger("touchstart");
+		setTimeout(function() { 
+			$("#menu-contact").trigger("touchstart");
+		}, 2300);
+	});
 	$("#send").on("click touchstart", function() {
 		$(".contact-confirm").show();
 	});
-
 	$(".contact-confirm-message").on("click touchstart", function(e) {
 		e.preventDefault();
 		sendMail();

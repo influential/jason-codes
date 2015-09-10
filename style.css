@@ -71,6 +71,9 @@ body {
 	height: 100%;
 	width: 100%;
 }
+.intro-email-shoot {
+	cursor: pointer;
+}
 
 /* Helper Popup */
 
@@ -180,6 +183,20 @@ body {
     -ms-transform:translateY(-50%);
     -o-transform:translateY(-50%);
     -webkit-transform:translateY(-50%);
+}
+.menu-label {
+	display: none;
+    position: absolute;
+	text-align: center;
+    width: 100%;
+}
+.menu-label-helper {
+	bottom: -30px;
+	display: none;
+    position: absolute;
+    right: -100px;
+    text-align: center;
+    width: 100%;
 }
 
 /* Sections */

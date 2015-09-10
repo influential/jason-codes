@@ -3,9 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="dist/style.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="dist/main.js"></script>
+		<script src="main.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-67450028-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 	</head>
 	<body>
 		<!--[if IE]>
@@ -34,13 +42,13 @@
 		<section id="menu">
 			<div id="menu-center" class="menu-vertical">
 				<ul id="menu-list">
-					<li id="menu-about" class="menu-active hidden" href="#about"></li>
-					<li id="menu-skills" class="menu-inactive" href="#skills"></li>
-					<li id="menu-work" class="menu-inactive" href="#work"></li>
-					<li id="menu-projects" class="menu-inactive" href="#projects"></li>
-					<li id="menu-connect" class="menu-inactive" href="#connect"></li>
-					<li id="menu-contact" class="menu-inactive" href="#contact"></li>
-					<li id="menu-talk" class="menu-inactive" href="#talk"></li>
+					<li id="menu-about" class="menu-active hidden" href="#about"><span class="menu-label">About</span><span class="menu-label-helper">Menu</span></li>
+					<li id="menu-skills" class="menu-inactive" href="#skills"><span class="menu-label">Skills</span></li>
+					<li id="menu-work" class="menu-inactive" href="#work"><span class="menu-label">Jobs</span></li>
+					<li id="menu-projects" class="menu-inactive" href="#projects"><span class="menu-label">Projects</span></li>
+					<li id="menu-connect" class="menu-inactive" href="#connect"><span class="menu-label">Connect</span></li>
+					<li id="menu-contact" class="menu-inactive" href="#contact"><span class="menu-label">Contact</span></li>
+					<li id="menu-talk" class="menu-inactive" href="#talk"><span class="menu-label">Text</span></li>
 				</ul>
 			</div>
 		</section>
@@ -54,16 +62,13 @@
 				</div>
 				<div class="about-animate-three">
 					<div class="text-small pad-bottom-large">
-						Sorry if my introduction was a little confusing. And I'm really sorry if you first opened my site in Internet Explorer 7, 8, or 9. Actually, I'm not. This site will support all IE users eventually, but I'm secretly hoping everyone downloads Windows 10 or <span class="orange">stop</span>s <span class="orange">using Internet Explorer</span> before I get around to it.
-					</div>
-					<div class="text-small pad-bottom-large">
-						Disclaimer, <span class="orange">I</span> m<span class="orange">a</span>y or <span class="orange">m</span>ay <span class="orange">not</span> be using font color in a <span class="orange">manipulative</span> fashion.
+						Sorry if my introduction was a little confusing. I was just having too much fun with jQuery, if you couldn't tell.
 					</div>
 					<div class="text-medium pad-bottom-large">
 						Anyway...
 					</div>
 					<div class="text-small pad-bottom-large">
-						I don't know who you are (Google Analytics is going to tell me where you live, though), but I'm going to assume you're here to see what I'm about. So here's a short spiel about myself.
+						I don't know who you are (Google Analytics is going to tell me where you live, though), but I'm going to assume you're here to see what I'm about. So here's a short spiel.
 					</div>
 					<div class="text-small pad-bottom-large">
 						I, <span class="orange">Jason Huntrods</span>, grew up on a small family farm with a dial-up internet connection. It was an atypical environment for raising someone who likes to code, but here I am.
@@ -81,7 +86,7 @@
 						I hope you'll <span class="orange">take a few minutes and look around</span> my site. The menu is located in the top left corner (my face), and only through that you can access the rest of the site. You can find information on my skills, projects, previous work experience, recommendations, social media, and more.
 					</div>
 					<div class="text-small pad-bottom-large">
-						If you would like to get in touch, you can <span class="orange">shoot me an email</span> or text through this site. My phone number is also listed in the contact section.
+						If you would like to get in touch, you can <span class="intro-email-shoot orange">shoot me an email</span> or text through this site. My phone number is also listed in the contact section.
 					</div>
 				</div>
 			</div>
@@ -255,7 +260,7 @@
 			<div class="skills-bar-container">
 				<div class="skills-bar" style="width: 120%;">
 					<div class="skills-bar-text">
-						Awesomeness
+						Nerf Gun Combat
 					</div>
 				</div>
 			</div>
