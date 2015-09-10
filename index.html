@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="dist/style.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="dist/main.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+		<div style="background-color: black; height: 100%; left: 0; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 100;">
+			I don't support this low version of IE, since this site has some more complex animations. Please open this website in a modern version of Internet Explorer.
+		</div>
+		<![endif]-->
+		<section id="intro">
+			<div id="intro-helper" class="hidden">
+				<div class="helper-inner">
+					<div class="helper-pre-text">
+						Hey, to see my site try hitting the "Run" button!
+					</div>
+					<div class="helper-text-container">
+						<div class="intro-helper-text helper-text">Got It!</div>
+					</div>
+				</div>
+			</div>
+			<div id="intro-container">
+				<div id="intro-anchor">> </div>
+				<div id="intro-append"></div>
+				<div id="intro-cursor">|</div>
+				<div id="intro-launch" class="disabled">Run</div>
+			</div>
+		</section>
+		<section id="menu">
+			<div id="menu-center" class="menu-vertical">
+				<ul id="menu-list">
+					<li id="menu-about" class="menu-active hidden" href="#about"></li>
+					<li id="menu-skills" class="menu-inactive" href="#skills"></li>
+					<li id="menu-work" class="menu-inactive" href="#work"></li>
+					<li id="menu-projects" class="menu-inactive" href="#projects"></li>
+					<li id="menu-connect" class="menu-inactive" href="#connect"></li>
+					<li id="menu-contact" class="menu-inactive" href="#contact"></li>
+					<li id="menu-talk" class="menu-inactive" href="#talk"></li>
+				</ul>
+			</div>
+		</section>
+		<section id="about" class="section-item section-active">
+			<div id="about-text">
+				<div class="text-large pad-menu pad-bottom-small about-animate-one">
+					Phew,
+				</div>
+				<div class="text-medium pad-bottom-large about-animate-two">
+					you're still here.
+				</div>
+				<div class="about-animate-three">
+					<div class="text-small pad-bottom-large">
+						Sorry if my introduction was a little confusing. And I'm really sorry if you first opened my site in Internet Explorer 7, 8, or 9. Actually, I'm not. This site will support all IE users eventually, but I'm secretly hoping everyone downloads Windows 10 or <span class="orange">stop</span>s <span class="orange">using Internet Explorer</span> before I get around to it.
+					</div>
+					<div class="text-small pad-bottom-large">
+						Disclaimer, <span class="orange">I</span> m<span class="orange">a</span>y or <span class="orange">m</span>ay <span class="orange">not</span> be using font color in a <span class="orange">manipulative</span> fashion.
+					</div>
+					<div class="text-medium pad-bottom-large">
+						Anyway...
+					</div>
+					<div class="text-small pad-bottom-large">
+						I don't know who you are (Google Analytics is going to tell me where you live, though), but I'm going to assume you're here to see what I'm about. So here's a short spiel about myself.
+					</div>
+					<div class="text-small pad-bottom-large">
+						I, <span class="orange">Jason Huntrods</span>, grew up on a small family farm with a dial-up internet connection. It was an atypical environment for raising someone who likes to code, but here I am.
+					</div>
+					<div class="text-small pad-bottom-large">
+						Now I'm a junior at Iowa State University, studying software engineering. I've been lucky to have two internships, one at a startup and the other at a Fortune 500 company. Both experiences taught me a lot of new things, and as I'm looking for another position for next spring, <span class="orange">summer</span>, or fall, my goal is pretty simple.
+						</div>
+					<div class="text-medium pad-bottom-large">
+						I want to learn something cool.
+					</div>
+					<div class="text-small pad-bottom-large">
+						There's so much to learn, so I try to spend as much time as I can doing just that. Projects, hackathons, just surfing the web, there are many ways to learn something new.
+					</div>
+					<div class="text-small pad-bottom-large">
+						I hope you'll <span class="orange">take a few minutes and look around</span> my site. The menu is located in the top left corner (my face), and only through that you can access the rest of the site. You can find information on my skills, projects, previous work experience, recommendations, social media, and more.
+					</div>
+					<div class="text-small pad-bottom-large">
+						If you would like to get in touch, you can <span class="orange">shoot me an email</span> or text through this site. My phone number is also listed in the contact section.
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="skills" class="section-item section-inactive">
+			<div class="text-large pad-menu pad-bottom-small text-right">
+				Skills
+			</div>
+			<div class="text-medium pad-bottom-large text-right">
+				that I have.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				This is just a general breakdown of how familiar I am with the various technologies I've learned and been exposed to. The scale is relative, with 0 meaning no experience, but I'm still not sure exactly what 100 means. If you head over to my projects section that might help you get a grasp for how I ranked my skills.
+			</div>
+			<div class="skills-bar-container">
+				<div id="skills-bar-key-right" class="skills-bar skills-bar-key" >
+					<div class="skills-bar-text skills-bar-text">
+						25
+					</div>
+				</div>
+				<div class="skills-bar skills-bar-key">
+					<div class="skills-bar-text skills-bar-text">
+						50
+					</div>
+				</div>
+				<div class="skills-bar skills-bar-key">
+					<div class="skills-bar-text skills-bar-text">
+						75
+					</div>
+				</div>
+				<div id="skills-bar-key-left" class="skills-bar skills-bar-key">
+					<div class="skills-bar-text skills-bar-text">
+						100
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 85%;">
+					<div class="skills-bar-text">
+						Javascript
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 75%;">
+					<div class="skills-bar-text">
+						jQuery
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 75%;">
+					<div class="skills-bar-text">
+						HTML
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 70%;">
+					<div class="skills-bar-text">
+						CSS
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 65%;">
+					<div class="skills-bar-text">
+						SEO
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 65%;">
+					<div class="skills-bar-text">
+						Social Media
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 55%;">
+					<div class="skills-bar-text">
+						PHP
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 50%;">
+					<div class="skills-bar-text">
+						Wordpress
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 50%;">
+					<div class="skills-bar-text">
+						Git
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 45%;">
+					<div class="skills-bar-text">
+						Node.js
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 45%;">
+					<div class="skills-bar-text">
+						SASS/LESS
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 45%;">
+					<div class="skills-bar-text">
+						Java
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 40%;">
+					<div class="skills-bar-text">
+						MySQL
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 40%;">
+					<div class="skills-bar-text">
+						Mongo
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 30%;">
+					<div class="skills-bar-text">
+						Grunt
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 30%;">
+					<div class="skills-bar-text">
+						LAMP
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 30%;">
+					<div class="skills-bar-text">
+						LNMP
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 25%;">
+					<div class="skills-bar-text">
+						C
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 23%;">
+					<div class="skills-bar-text">
+						C++
+					</div>
+				</div>
+			</div>
+			<div class="skills-bar-container">
+				<div class="skills-bar" style="width: 120%;">
+					<div class="skills-bar-text">
+						Awesomeness
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="work" class="section-item section-inactive">
+			<div class="text-large pad-menu pad-bottom-small text-right">
+				Places
+			</div>
+			<div class="text-medium pad-bottom-large text-right">
+				I've worked.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				I've had two great internships that have helped me learn a lot about coding, teamwork, and life. But I think it is the jobs that I had before I wrote my first function that helped me succeed in my internships. I grew up working on a family farm, and above all I learned how to work hard, and to get the job done right.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				Prior to my freshman year at ISU I was also able to work for 3 years at a local orchard and at a summer camp doing maintenance. After my freshman year of college I interned at Sculpt, then after my sophomore year at Principal Financial Group. Just click/tap each logo for more information on my internships.
+			</div>
+			<div class="work-select-container text-medium text-work-medium">
+				<div class="work-select work-select-right"></div>
+				Principal
+			</div>
+			<div class="text-small pad-bottom-large">
+				At Principal Financial Group I was a front end developer intern on a front end specialty team. I worked on a few projects over the summer with another intern, and also helped out with smaller, regular tasks that my team had.
+			</div>
+			<div class="text-small pad-bottom-large">
+				The first project I worked on was a discovery and recommendation project. The goal was to analyze a new technology, experiment with it, and decide if it could be used to fulfill a business need at Principal. The second project was an automation project, where we worked on optimizing a time consuming process. I got good experience with Node.js, Sails.js, HTML/CSS, jQuery, and PHP. I also got to work with Windows Batch programming, JSF, XSLT, and XML.
+			</div>
+			<div class="text-small pad-bottom-large">
+				Principal also provided a cool experience by hosting a week long hackathon for all IT interns. The team I was on took first place. The hackathon was a blast, and taught me a lot about teamwork and leadership. Here's part of my mentor's review of me at the conclusion of my internship:
+			</div>
+			<div class="text-medium pad-bottom-large text-quote">
+				"Jason is an extremely technical individual... He should fit in well on any team that needs a high performing and talented engineer."
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-left" href="http://www.linkedin.com/in/jasonhuntrods">
+					<div class="work-full">Full Recommendation</div>
+				</a>
+			</div>
+			<div class="work-select-container text-medium text-right text-work-medium">
+				<div class="work-select work-select-left"></div>
+				Sculpt
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				Sculpt, a social media agency that does just about everything, gave me a fantastic internship after my freshman year. I spent the summer building websites, developing SEO strategies, and working with social media.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				Sculpt gave me a unique opportunity by letting me directly communicate with clients and make important decisions. I also gained invaluable connections in the Iowa startup and tech space because of Sculpt's active participation in that community. It's hard to describe everything I learned, but by the end of the summer I had no doubt in my mind what the best color in the world is. Here are a few words my boss, the CEO of Sculpt had to say about me:
+			</div>
+			<div class="text-medium pad-bottom-large text-quote text-right">
+				"Just give him a blank canvas, a head-scratching problem, and a comfy place to rest his Macbook. With no more than that, he will make you money.<br><br>We had no open positions when Jason applied. He cold emailed me an offer, and we had no choice but to accept."
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-right" href="http://www.linkedin.com/in/jasonhuntrods">
+					<div class="work-full">Full Recommendation</div>
+				</a>
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="projects" class="section-item section-inactive">
+			<div class="text-large pad-menu pad-bottom-small text-right">
+				Things
+			</div>
+			<div class="text-medium pad-bottom-large text-right">
+				I've coded.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				It didn't take me long to realize that code tutorials can only help you so much. The best way to learn to code is to simply start coding and learn as you go. Here's some of the various projects I've worked on on my own and in school.
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-left text-left text-medium orange">Censure</div>
+			</div>
+			<div class="text-small pad-bottom-large text-left">
+				I worked on Censure on a team with 3 other students for a class last spring. Censure is a web application that connects to the Facebook, Twitter, and Tumblr APIs and uses them to grab all of a user's posts and run them through a censoring algorithm. There's an adjustable difficulty, and users can view all flagged posts and delete them directly from the app. It basically checks your social media for "bad posts".
+			</div>
+			<div class="text-small pad-bottom-large text-left">
+				Censure was a lot of code, we learned a lot about connecting to APIs, and structuring a web application. If I could go back and rewrite Censure it would be a whole lot cleaner, but it took a lot of time from the 4 of us to finish before the end of the class.
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-left" href="http://github.com/influential/censure">
+					<div class="work-full">View On Github</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-right text-right text-medium orange">RLG</div>
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				RLG (Rogue-Like-Game) was a game I made for another class last spring. I had never coded in C or C++ prior to the class, but by the end I had created a 5,300 line game. In the game you're a character in a dungeon, with monsters, items, stairs, all sorts of objects that manipulate gameplay. Despite this being a very time consuming and difficult project, it was a lot of fun being able to play the game after finishing it.
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-right" href="http://github.com/influential/dungeon">
+					<div class="work-full">View On Github</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-left text-left text-medium orange">Tumblfun</div>
+			</div>
+			<div class="text-small pad-bottom-large text-left">
+				Tumblfun was my main side-project during my freshman and sophomore year at Iowa State. I started massing Tumblr followers, and after about a year I had over 400,000 followers. I created Tumblfun to monetize them, and then opened my site out to other large Tumblr blogs to be used as an affiliate site. I optimized the site to make more money, using a responsive layout and improving page speed. Unfortunately, last year most of my blogs were terminated for some unknown reason. So I sold what blogs I had left, and the website. By the end of its short reign Tumblfun ammassed over 10,660,000 pageviews and generated over $36,700 in ad revenue.
+			</div>
+			<div class="text-small pad-bottom-large text-left">
+				Unfortunately most of my blogs were terminated for some unknown reason last year. So I sold what blogs I had left, and the website. Now the site is pretty beat up and broken now (new owner hasn't updated it and doesn't use it anymore). But there are still some fun features that I implemented, including a quiz engine that still exists on the site.
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-left" href="http://tumblfun.com">
+					<div class="work-full">Visit Site</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-right text-right text-medium orange">jason.codes</div>
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				This website wasn't a one day project. I got a little picky with it, and eventually had to just get it together so I could use it this fall. I'm trying to do it with a high amount of original code, so things like the menu took a lot of time to get working. Some solid jQuery went into creating this site and my goal is to improve it much more when I have some time, and make it IE compatible, I guess.
+			</div>
+			<div class="work-full-container">
+				<a class="text-center work-full-link float-right" href="http://github.com/influential/jason-codes">
+					<div class="work-full">View On Github</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-left text-left text-medium orange">Social Media</div>
+			</div>
+			<div class="text-small pad-bottom-large text-left">
+				In addition to programming, I regularly use my social media and SEO skills in my own projects. Some examples include managing over $4,000 in social media ad spend for a startup, or the monetization of the over one million followers I've owned on social media. As a result I have a lot of good connections with people that have access to many millions of followers.
+			</div>
+			<div class="project-title-container">
+				<div class="project-title project-title-right text-right text-medium orange">Other</div>
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				There are numerous other projects I've worked on. A lot of the websites/applications I worked on during my internships I can't go into detail explaining (just playing it safe). At Sculpt I redesigned and modified multiple websites, and at Principal I did a bit more heavier programming (lots of Javascript). I also have done some freelance projects within the realm of basic Wordpress modifications (PHP and Javascript), for people who run sites similar to Tumblfun.
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="connect" class="section-item section-inactive">
+			<div class="text-large pad-menu pad-bottom-small text-right">
+				Follow
+			</div>
+			<div class="text-medium pad-bottom-large text-right">
+				or friend me.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				Here are links to my social media and other accounts. I don't post or tweet or whatever often, but when I do, you know it's good.
+			</div>
+			<div class="project-title-container">
+				<a href="http://twitter.com/lnfIuential">
+					<div class="project-title project-title-right text-right text-medium orange">Twitter</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<a href="http://linkedin.com/in/jasonhuntrods">
+					<div class="project-title project-title-right text-right text-medium orange">Linkedin</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<a href="http://github.com/influential">
+					<div class="project-title project-title-right text-right text-medium orange">Github</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<a href="http://instagram.com/influential">
+					<div class="project-title project-title-right text-right text-medium orange">Instagram</div>
+				</a>
+			</div>
+			<div class="project-title-container">
+				<a href="http://stackoverflow.com/users/3720410/influential">
+					<div class="project-title project-title-right text-right text-medium orange">StackOverflow</div>
+				</a>
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="contact" class="section-item section-inactive">
+			<div id="contact-helper" class="contact-confirm hidden">
+				<div class="helper-inner mail-inner">
+					<div class="helper-pre-text contact-pre-text">
+						Send email?
+					</div>
+					<div class="contact-poptext-container contact-confirm-button text-center">
+						<div class="helper-text contact-confirm-message">Send It!</div>
+					</div>
+					<div class="contact-poptext-container contact-no-button text-center">
+						<div class="helper-text contact-no-message">Not Yet!</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-large pad-menu pad-bottom-small text-right">
+				Email
+			</div>
+			<div class="text-medium pad-bottom-large text-right">
+				me, please.
+			</div>
+			<div class="text-small pad-bottom-large text-right">
+				Well it's technically my own server sending the email, but close enough. Go back to my menu if you're adventurous and want to shoot me a text via this site instead.
+			</div>
+			<div class="contact-text-container-main">
+				<div class="contact-text-container">
+					<input id="input-one" class="contact-text" type="text" placeholder="Name" />
+				</div>
+				<div class="contact-text-container">
+					<input id="input-two" class="contact-text" type="text" placeholder="Phone/Email" />
+				</div>
+				<div class="contact-text-container">
+					<textarea id="input-three" class="contact-text contact-text-body" placeholder="Words"></textarea>
+				</div>
+			</div>
+			<div id="send-container" class="work-full-container text-center">
+				<div id="send" class="work-full float-right">Send</div>
+			</div>
+		</section>
+		<div class="section-line section-inactive"></div>
+		<section id="talk" class="section-item section-inactive">
+		<div class="text-large pad-menu pad-bottom-small text-right">
+			This
+		</div>
+		<div class="text-medium pad-bottom-large text-right">
+			isn't done, yet.
+		</div>
+		<div class="text-small pad-bottom-large text-right">
+			The Twilio-powered text message option will be available soon.
+		</div>
+		</section>
+	</body>
+</html>
