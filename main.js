@@ -316,7 +316,7 @@ function startMail() {
 
 function sendMail() {
 	$(".contact-confirm-message").text("Sending...");
-	$.post( "http://104.236.234.115:1337/mail", {
+	$.post( "http://104.236.48.178:1337/mail", {
 		name: $("#input-one").val(),
 		contact: $("#input-two").val(),
 		message: $("#input-three").val()
