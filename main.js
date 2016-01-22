@@ -316,10 +316,9 @@ function startMail() {
 
 function sendMail() {
 	$(".contact-confirm-message").text("Sending...");
-	$.post( "http://104.236.48.178:1337/mail", {
-		name: $("#input-one").val(),
-		contact: $("#input-two").val(),
-		message: $("#input-three").val()
+	$.post("//formspree.io/jasonhuntrods@gmail.com", {
+		data: {message: $("#input-one").val() + $("#input-two").val() + $("#input-three").val()},
+		dataType: "json"
 	}).done(function() {
 		$(".contact-confirm-message, .contact-no-message").hide();
 		$(".contact-pre-text").text("Email Sent!");
