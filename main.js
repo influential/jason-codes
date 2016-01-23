@@ -141,8 +141,8 @@ function launch(height, delay) {
 								$("#menu").css("background-color", "rgba(0,0,0,0)");
 								$("#intro").remove();
 								$("#menu").css({width: "80px", height: "80px"});
-								$(".about-animate-one").animate({marginRight: "0px"}, 1000, function() {
-									$(".about-animate-two").delay(500).animate({marginRight: "0px"}, 1000, function() {
+								$(".about-animate-one").animate({marginTop: "0px"}, 1000, function() {
+									$(".about-animate-two").delay(500).animate({marginTop: "0px"}, 1000, function() {
 										$(".about-animate-three").delay(100).animate({marginTop: "0px"}, 1200, function() {
 											$(".menu-label-helper").show().animate({left: "0px"}, 300, function() {
 												$(window).scroll(function() {
@@ -316,10 +316,12 @@ function startMail() {
 
 function sendMail() {
 	$(".contact-confirm-message").text("Sending...");
-	$.post("//formspree.io/jasonhuntrods@gmail.com", {
-		data: {message: $("#input-one").val() + $("#input-two").val() + $("#input-three").val()},
+	$.ajax({
+		url: "//formspree.io/jasonhuntrods@gmail.com",
+		method: "POST",
+		data: {message: "Name: " + $("#input-one").val() + "\nEmail: " + $("#input-two").val() + "\nMessage: " + $("#input-three").val()},
 		dataType: "json"
-	}).done(function() {
+	}).success(function() {
 		$(".contact-confirm-message, .contact-no-message").hide();
 		$(".contact-pre-text").text("Email Sent!");
 		$("#input-one").val("");
